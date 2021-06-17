@@ -1,0 +1,33 @@
+.HeroCard{
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    background-color: #A7C4BC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    p{
+        font-weight: bold;
+        color: #444444;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    button{
+        margin-right: 20px;
+        border-radius: 5px;
+        border-style: none;
+        border:#2F5D62 1px solid;
+        width: 50px;
+    }
+}
+
+.hero-card-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
