@@ -1,7 +1,9 @@
 import "./App.scss"
 import Header from "../Header/Header"
 import Main from "../Main/Main"
+import SingleCharacter from "../SingleCharacter/SingleCharacter"
 import { useEffect, useState } from "react"
+import { Switch, Route } from "react-router-dom"
 
 
 const App = () => {
@@ -15,11 +17,12 @@ const App = () => {
 
     const InitialsetAddToTeam = (arg) => {
 
-        setAddToTeam(arr => [...arr, arg]
-        )
+        setAddToTeam(arr => {
+            return !arr.includes(arg) ? [...arr, arg] : [...arr]
+        })
     }
 
-    // const filtered = 
+
 
 
 
@@ -37,7 +40,11 @@ const App = () => {
     return (
         <div className="App">
             <Header />
+            <SingleCharacter />
             <Main data={data} addToTeam={InitialsetAddToTeam} dataLittleHero={addToTeam} />
+            <Switch>
+                <Route />
+            </Switch>
         </div>
     )
 }

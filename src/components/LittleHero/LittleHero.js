@@ -4,10 +4,14 @@ import "./LittleHero.scss"
 const LittleHero = (props) => {
 
     return (
+
+
         <div className="LittleHero">
+            <img src={`${props.e.thumbnail.path}.${props.e.thumbnail.extension}`}></img>
             <p>{props.e.name}</p>
-            {/* <img src={`${props.dataLittleHero.thumbnail.path}.${props.dataLittleHero.thumbnail.extension}`}></img> */}
+
         </div>
+
     )
 
 }

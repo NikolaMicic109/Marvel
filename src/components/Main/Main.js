@@ -17,6 +17,7 @@ const Main = (props) => {
             </div>
 
             <div className="little-hero-container">
+                <div className="my-heroes"><h3>My Heroes</h3></div>
                 {props.dataLittleHero.map(e => {
                     return <LittleHero dataLittleHero={props.dataLittleHero} e={e} />
                 })}

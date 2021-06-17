@@ -1,3 +1,32 @@
-// .LittleHero{
-// width: 30%;
-// }
+.liitle-hero-container{
+    width: 40%;
+}
+
+.LittleHero{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #A7C4BC;
+width: 80%;
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+img{
+    display: block;
+    height: 30%;
+}
+
+p{
+    font-size: 20px;
+    width: 80%;
+    text-align: right;
+
+}
+    
+
+}
+.my-heroes{
+    text-align: center;
+    color: #444444;
+}
+
