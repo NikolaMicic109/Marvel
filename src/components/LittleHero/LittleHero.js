@@ -3,12 +3,22 @@ import "./LittleHero.scss"
 
 const LittleHero = (props) => {
 
+
+    const removeHero = () => {
+        console.log(props.e)
+
+    }
+
     return (
 
 
         <div className="LittleHero">
             <img src={`${props.e.thumbnail.path}.${props.e.thumbnail.extension}`}></img>
-            <p>{props.e.name}</p>
+            <div className="wrapper">
+                <p>{props.e.name}</p>
+                <button onClick={removeHero} className="remove">Remove</button>
+            </div>
+
 
         </div>
 

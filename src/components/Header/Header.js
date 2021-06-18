@@ -1,10 +1,11 @@
 import "./Header.scss"
+import logo from "../../images/logo.png"
 
 
 const Header = () => {
     return (
         <div className="Header">
-            <header>Hero Team</header>
+            <img src={logo}></img>
             <div className="all-heroes"></div>
         </div>
     )

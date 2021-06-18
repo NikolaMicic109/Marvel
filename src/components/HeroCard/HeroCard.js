@@ -9,11 +9,15 @@ const HeroCard = (props) => {
         props.addToTeam(props.data)
     }
 
+    const sendToSingleChar = () => {
+        props.sendToSingleChar(props.data)
+    }
+
     return (
         <div className="HeroCard">
             <p>{props.data.name}</p>
             <img src={`${props.data.thumbnail.path}.${props.data.thumbnail.extension}`} />
-            <button >Info</button>
+            <button onClick={sendToSingleChar}>Info</button>
             <button onClick={addToTeam}>Add</button>
         </div>
     )

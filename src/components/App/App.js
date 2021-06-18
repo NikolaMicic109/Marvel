@@ -12,6 +12,8 @@ const App = () => {
     const [data, getData] = useState([])
     const [addToTeam, setAddToTeam] = useState([])
 
+    const [singleChar, setSingleChar] = useState([])
+
 
 
 
@@ -40,8 +42,10 @@ const App = () => {
     return (
         <div className="App">
             <Header />
-            <SingleCharacter />
-            <Main data={data} addToTeam={InitialsetAddToTeam} dataLittleHero={addToTeam} />
+
+            {singleChar.length !== 0 ? <SingleCharacter char={singleChar} /> : <Main data={data} addToTeam={InitialsetAddToTeam} dataLittleHero={addToTeam} sendToSingleChar={setSingleChar} />}
+
+
             <Switch>
                 <Route />
             </Switch>

@@ -9,15 +9,16 @@ const Main = (props) => {
 
     return (
         <div className="Main">
+
             <div className="hero-card-container">
                 {props.data.map(e => {
                     // console.log(e);
-                    return < HeroCard data={e} addToTeam={props.addToTeam} />
+                    return < HeroCard data={e} addToTeam={props.addToTeam} sendToSingleChar={props.sendToSingleChar} />
                 })}
             </div>
 
             <div className="little-hero-container">
-                <div className="my-heroes"><h3>My Heroes</h3></div>
+
                 {props.dataLittleHero.map(e => {
                     return <LittleHero dataLittleHero={props.dataLittleHero} e={e} />
                 })}
