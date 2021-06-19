@@ -20,7 +20,7 @@ const Main = (props) => {
             <div className="little-hero-container">
 
                 {props.dataLittleHero.map(e => {
-                    return <LittleHero dataLittleHero={props.dataLittleHero} e={e} />
+                    return <LittleHero removeHero={props.removeHero} dataLittleHero={props.dataLittleHero} e={e} />
                 })}
 
             </div>

@@ -24,6 +24,10 @@ const App = () => {
         })
     }
 
+    const removeHero =(arg)=>{
+       setAddToTeam(addToTeam.filter(e=> e!== arg)) 
+    }
+
 
 
 
@@ -43,7 +47,7 @@ const App = () => {
         <div className="App">
             <Header />
 
-            {singleChar.length !== 0 ? <SingleCharacter char={singleChar} /> : <Main data={data} addToTeam={InitialsetAddToTeam} dataLittleHero={addToTeam} sendToSingleChar={setSingleChar} />}
+            {singleChar.length !== 0 ? <SingleCharacter char={singleChar} /> : <Main removeHero={removeHero} data={data} addToTeam={InitialsetAddToTeam} dataLittleHero={addToTeam} sendToSingleChar={setSingleChar} />}
 
 
             <Switch>

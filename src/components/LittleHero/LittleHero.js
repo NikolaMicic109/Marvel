@@ -5,7 +5,7 @@ const LittleHero = (props) => {
 
 
     const removeHero = () => {
-        console.log(props.e)
+        props.removeHero(props.e)
 
     }
 

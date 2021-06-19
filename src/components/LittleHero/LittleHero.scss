@@ -1,4 +1,7 @@
-
+.liitle-hero-container{
+    width: 30%;
+    flex-grow: 1;
+}
 
 .LittleHero{
 display: flex;
@@ -6,8 +9,9 @@ justify-content: space-between;
 align-items: center;
 background-color: #A7C4BC;
 width: 80%;
-padding: 20px;
+padding: 5px;
 margin: 10px;
+margin-top: 0;
 border-radius: 10px;
 
 &:hover .remove{
@@ -19,7 +23,7 @@ img{
 }
 
 p{
-    font-size: 20px;
+    font-size: 10px;
     width: 80%;
     text-align: right;
 
@@ -46,6 +50,46 @@ p{
     
     
 }
+
+
+@media screen and (max-width: 800px) {
+   .LittleHero{
+width: 50%;
+
+img{
+    width: 80px;
+}
+
+p{
+    display: none;
+}
+   }
+
+   .wrapper{
+       padding: 0;
+   }
+
+   .remove{
+       font-size: 8px;
+   }
+}
+
+
+@media screen and (max-width: 600px) {
+    .LittleHero{
+        width: 50%;
+
+        img{
+            width: 60px;
+        }
+
+        p{
+            display: none;
+        }
+           }
+}
+
+
 
 
 
